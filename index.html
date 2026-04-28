@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ContextCard Privacy Policy</title>
+    <style>
+      :root {
+        --bg: #0d0f14;
+        --bg-card: #13161f;
+        --border: #252836;
+        --accent: #00c49a;
+        --text: #dde1ed;
+        --text-dim: #7a8499;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font: 16px/1.65 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+      main {
+        max-width: 860px;
+        margin: 0 auto;
+        padding: 32px 22px 72px;
+      }
+      a { color: var(--accent); text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      .back {
+        display: inline-flex;
+        color: var(--text-dim);
+        margin-bottom: 28px;
+      }
+      .policy {
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-left: 4px solid var(--accent);
+        padding: 36px;
+      }
+      h1, h2 {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+        letter-spacing: 0;
+      }
+      h1 {
+        font-size: clamp(28px, 5vw, 42px);
+        line-height: 1.08;
+        margin: 0 0 10px;
+      }
+      h2 {
+        color: var(--accent);
+        font-size: 18px;
+        margin: 34px 0 10px;
+      }
+      p { margin: 0 0 14px; }
+      .updated { color: var(--text-dim); margin-bottom: 28px; }
+      ul { margin: 0; padding-left: 22px; }
+      li { margin: 10px 0; }
+      strong { color: var(--text); }
+      code {
+        color: var(--accent);
+        background: rgba(0, 196, 154, 0.1);
+        padding: 2px 5px;
+      }
+      @media (max-width: 640px) {
+        main { padding: 20px 14px 48px; }
+        .policy { padding: 24px 18px; }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <a class="back" href="#">← Back</a>
+      <article class="policy">
+        <h1>ContextCard Privacy Policy</h1>
+        <p class="updated"><strong>Last updated: April 28, 2026</strong></p>
+
+        <h2>What ContextCard does</h2>
+        <p>ContextCard is a Chrome extension that reads your AI chat conversations (on Claude.ai, ChatGPT, and Gemini) when you click Save Session, sends that text to Anthropic's API to generate a structured summary, and stores the resulting summary locally in your browser using <code>chrome.storage.local</code>.</p>
+
+        <h2>Data we collect</h2>
+        <ul>
+          <li>Your Claude API key — stored in <code>chrome.storage.local</code> on your device only. Never transmitted anywhere except to <code>api.anthropic.com</code> to generate summaries.</li>
+          <li>Conversation text — read from the page when you click Save Session. Sent to <code>api.anthropic.com</code> once to generate a summary, then discarded. The resulting summary is stored locally only.</li>
+          <li>Saved session summaries — stored in <code>chrome.storage.local</code> on your device. Never transmitted to any server.</li>
+        </ul>
+
+        <h2>Data we do NOT collect</h2>
+        <ul>
+          <li>No account required. No registration.</li>
+          <li>No analytics or usage tracking.</li>
+          <li>No data sent to the extension developer.</li>
+          <li>No advertising data.</li>
+          <li>No browsing history outside of AI chat pages.</li>
+        </ul>
+
+        <h2>Third-party services</h2>
+        <p>The only external service this extension communicates with is <code>api.anthropic.com</code> (Anthropic, PBC) for AI summarization.</p>
+        <p>Anthropic's privacy policy: <a href="https://www.anthropic.com/privacy">https://www.anthropic.com/privacy</a></p>
+
+        <h2>Data storage</h2>
+        <p>All data is stored locally in your browser using Chrome's built-in <code>chrome.storage.local</code> API. Uninstalling the extension deletes all stored data.</p>
+
+        <h2>Your rights</h2>
+        <p>You can delete all saved sessions at any time from the extension's options page. Uninstalling the extension removes all stored data.</p>
+
+        <h2>Contact</h2>
+        <p><a href="mailto:privacy@contextcard.app">privacy@contextcard.app</a></p>
+      </article>
+    </main>
+  </body>
+</html>
